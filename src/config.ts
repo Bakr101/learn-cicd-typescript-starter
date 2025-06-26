@@ -1,4 +1,5 @@
 import dotenv from "dotenv";
+import process from "node:process";
 dotenv.config();
 
 type Config = {
@@ -24,3 +25,4 @@ export const config: Config = {
     url: process.env.DATABASE_URL,
   },
 };
+
