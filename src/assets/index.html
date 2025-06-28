@@ -125,7 +125,7 @@
     async function fetchWithAlert(url, options) {
       const response = await fetch(url, options);
       if (response.status > 299) {
-        alert(`Error: ${response.status}`);
+        alert(`Error: ${response.status} ${response.body}`);
         return;
       }
       return response;
